@@ -1,0 +1,20 @@
+{{- if .Values.app.ingress.enabled -}}
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: app-ingress
+  annotations:
+    kubernetes.io/ingress.class: {{ .Values.app.ingress.class }}
+spec:
+  rules:
+    - host: {{ .Values.app.domain }}
+      http:
+        paths:
+          - backend:
+              service:
+                name: app-svc
+                port:
+                  number: 80
+            path: /
+            pathType: Prefix
+{{- end -}}

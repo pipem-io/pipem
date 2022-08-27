@@ -4,6 +4,9 @@ log:
 api:
   baseUrl: https://api.pipem.io
   domain: api.pipem.io
+  ingress:
+    enabled: true
+    class: kong
   cookie:
     secret: "pipem-io"
     domain: ".pipem.io"
@@ -11,10 +14,11 @@ api:
     secure: "true"
     sameSite: "Strict"
 
-ingress:
-  kong: true
-  nginx: false
-  traefik: false
+app:
+  domain: app.pipem.io
+  ingress:
+    enabled: true
+    class: kong
 
 username: "pipem"
 password: "pipem-io"

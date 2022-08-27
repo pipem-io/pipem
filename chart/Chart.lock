@@ -1,0 +1,9 @@
+dependencies:
+- name: mongodb
+  repository: https://charts.bitnami.com/bitnami
+  version: 10.30.12
+- name: nats
+  repository: https://nats-io.github.io/k8s/helm/charts/
+  version: 0.10.0
+digest: sha256:d728fc1a70f09abd1d38d34727cac960b385c9b7652c7f4596ff085428d4b797
+generated: "2022-08-27T15:05:29.920369+02:00"
