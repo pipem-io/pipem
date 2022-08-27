@@ -1,7 +1,11 @@
-# Pipem.io - Pipeline Monitoring
+# Pipem.io - Configuration
 
-Monitoring your pipeline's progress and status.
+# Install
 
-Try it out!
+```
+helm repo add pipem https://charts.pipem.io
+helm repo update
 
-Install pipem helm charts [here](https://github.com/pipem-io/helm-charts).
+helm install pipem/pipem pipem --namespace pipem
+
+```

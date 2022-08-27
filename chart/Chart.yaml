@@ -1,0 +1,22 @@
+apiVersion: v2
+name: pipem
+description: Pipem Config
+type: application
+icon: "https://avatars.githubusercontent.com/u/96174842"
+
+version: VERSION
+appVersion: VERSION
+
+dependencies:
+  - name: "mongodb"
+    version: "10.30.12"
+    repository: https://charts.bitnami.com/bitnami
+    condition: mongodb.install
+  - name: "nats"
+    repository: https://nats-io.github.io/k8s/helm/charts/
+    version: "0.10.0"
+
+maintainers:
+  - name: Mauro Sala
+    email: mau@pipem.io
+    url: https://pipem.io

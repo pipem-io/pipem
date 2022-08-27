@@ -1,0 +1,9 @@
+{{- if .Values.license -}}
+apiVersion: v1
+kind: Secret
+metadata:
+  name: pipem-license
+data:
+  xml: ''
+type: Opaque
+{{- end -}}

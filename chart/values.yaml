@@ -1,0 +1,26 @@
+log:
+  level: "info"
+
+api:
+  baseUrl: https://api.pipem.io
+  domain: api.pipem.io
+  cookie:
+    secret: "pipem-io"
+    domain: ".pipem.io"
+    maxAge: "604800" # 7 days
+    secure: "true"
+    sameSite: "Strict"
+
+ingress:
+  kong: true
+  nginx: false
+  traefik: false
+
+username: "pipem"
+password: "pipem-io"
+
+license: false
+
+mongodb:
+  install: false
+  uri: ""
