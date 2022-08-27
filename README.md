@@ -10,7 +10,7 @@ Tips: we use mongodb cloud atlas free tier.
 
 # Before install
 
-You must to set this vlues:
+You must to set this values:
 
 - set the mongodb uri in the values.yaml file
 - app.domain
