@@ -1,0 +1,29 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: config-init
+spec:
+  ttlSecondsAfterFinished: 300
+  template:
+    spec:
+      containers:
+        - name: config-init
+          image: docker.pipem.io/config-init:0.1.1
+          env:
+            - name: 'USERNAME'
+              valueFrom:
+                secretKeyRef:
+                  name: pipem-secret
+                  key: USERNAME
+            - name: 'PASSWORD'
+              valueFrom:
+                secretKeyRef:
+                  name: pipem-secret
+                  key: PASSWORD
+            - name: 'MONGODB_URI'
+              valueFrom:
+                secretKeyRef:
+                  name: pipem-secret
+                  key: MONGODB_URI
+      restartPolicy: OnFailure
+  backoffLimit: 5

@@ -14,7 +14,7 @@ dependencies:
     condition: mongodb.install
   - name: "nats"
     repository: https://nats-io.github.io/k8s/helm/charts/
-    version: "0.10.0"
+    version: "0.17.1"
 
 maintainers:
   - name: Mauro Sala

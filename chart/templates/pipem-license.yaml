@@ -1,9 +1,7 @@
-{{- if .Values.license -}}
 apiVersion: v1
 kind: Secret
 metadata:
   name: pipem-license
 data:
-  xml: ''
+  xml: {{ include "pipem.license" . | b64enc }}
 type: Opaque
-{{- end -}}

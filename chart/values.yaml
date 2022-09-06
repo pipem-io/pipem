@@ -2,8 +2,8 @@ log:
   level: "info"
 
 api:
-  baseUrl: https://api.pipem.io
   domain: api.pipem.io
+  schema: https://
   ingress:
     enabled: true
     class: kong
@@ -20,11 +20,13 @@ app:
     enabled: true
     class: kong
 
-username: "pipem"
+username: "admin"
 password: "pipem-io"
 
-license: false
+license: ""
 
 mongodb:
   install: false
   uri: ""
+  auth:
+    rootPassword: "f8MrA9Tp773StE582mw9"

@@ -5,5 +5,5 @@ metadata:
 data:
   runtime-config.js: |
     window['runConfig'] = {
-      apiBaseUrl: '{{ .Values.api.baseUrl }}'
+      apiBaseUrl: '{{ .Values.api.schema }}{{ .Values.api.domain }}'
     }
