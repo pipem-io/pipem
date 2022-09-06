@@ -23,10 +23,8 @@ app:
 username: "admin"
 password: "pipem-io"
 
-license: ""
-
 mongodb:
   install: false
-  uri: ""
+  uri: "dads"
   auth:
     rootPassword: "f8MrA9Tp773StE582mw9"
