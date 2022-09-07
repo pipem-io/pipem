@@ -25,6 +25,6 @@ password: "pipem-io"
 
 mongodb:
   install: false
-  uri: "dads"
+  uri: ""
   auth:
     rootPassword: "f8MrA9Tp773StE582mw9"

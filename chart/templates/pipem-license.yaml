@@ -3,7 +3,7 @@ kind: Secret
 metadata:
   name: pipem-license
 stringData:
-  xml: |
+  license: |
     <pipem>
     <retention>15</retention>
     <projects>1</projects>
