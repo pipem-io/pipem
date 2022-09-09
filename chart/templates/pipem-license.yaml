@@ -4,5 +4,5 @@ metadata:
   name: pipem-license
 data:
   license: |
-    {{ .Files.Get .Values.license | b64enc }}
+    {{ .Files.Get "team.xml" | b64enc }}
 type: Opaque
