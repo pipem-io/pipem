@@ -23,6 +23,8 @@ app:
 username: "admin"
 password: "pipem-io"
 
+license: "team.xml"
+
 mongodb:
   install: false
   uri: ""
