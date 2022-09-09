@@ -16,3 +16,4 @@ data:
   MONGO_PROJECTS_COLLECTION_NAME: "projects"
   MONGO_DB_NAME: "pipem"
   LOG_LEVEL: "{{ .Values.log.level }}"
+  NAMESPACE: {{ .Release.Namespace }}
