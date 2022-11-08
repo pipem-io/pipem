@@ -2,4 +2,4 @@ Thank you for installing Pipem.
 
 Your release is named {{ .Release.Name }}.
 
-Please refer to https://docs.pipem.io to get started.
+Please refer to https://docs.pipem.io to get started or go to https://community.pipem.io to get your license.
