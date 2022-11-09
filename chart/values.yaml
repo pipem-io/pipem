@@ -28,3 +28,7 @@ mongodb:
   uri: ""
   auth:
     rootPassword: "f8MrA9Tp773StE582mw9"
+
+configInit:
+  image: docker.pipem.io/config-init
+  tag: 0.2.0

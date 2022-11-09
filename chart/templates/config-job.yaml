@@ -8,7 +8,7 @@ spec:
     spec:
       containers:
         - name: config-init
-          image: docker.pipem.io/config-init:0.1.1
+          image: {{ .Values.configInit.image }}:{{ .Values.configInit.tag }}
           env:
             - name: 'USERNAME'
               valueFrom:
