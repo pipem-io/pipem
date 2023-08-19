@@ -9,12 +9,12 @@ appVersion: VERSION
 
 dependencies:
   - name: "mongodb"
-    version: "10.30.12"
+    version: "13.16.4"
     repository: https://charts.bitnami.com/bitnami
     condition: mongodb.install
   - name: "nats"
     repository: https://nats-io.github.io/k8s/helm/charts/
-    version: "0.17.1"
+    version: "1.0.2"
 
 maintainers:
   - name: Pipem.io
