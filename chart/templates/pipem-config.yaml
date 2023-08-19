@@ -6,10 +6,10 @@ data:
   COOKIE_HTTPONLY: 'true'
   COOKIE_SIGNED: 'true'
   COOKIE_NAME: 'pipem-io'
-  COOKIE_MAX_AGE: { { .Values.api.cookie.maxAge | quote } }
-  COOKIE_SECURE: { { .Values.api.cookie.secure | quote } }
-  COOKIE_DOMAIN: { { .Values.api.cookie.domain | quote } }
-  COOKIE_SAMESITE: { { .Values.api.cookie.sameSite | quote } }
+  COOKIE_MAX_AGE: {{ .Values.api.cookie.maxAge | quote }}
+  COOKIE_SECURE: {{ .Values.api.cookie.secure | quote }}
+  COOKIE_DOMAIN: {{ .Values.api.cookie.domain | quote }}
+  COOKIE_SAMESITE: {{ .Values.api.cookie.sameSite | quote }}
   NATS_URI: '{{ .Release.Name }}-nats.{{ .Release.Namespace }}.svc'
   MONGO_LOGS_COLLECTION_NAME: 'logs'
   MONGO_EVENTS_COLLECTION_NAME: 'events'
@@ -17,4 +17,4 @@ data:
   MONGO_ALERTS_COLLECTION_NAME: 'alerts'
   MONGO_DB_NAME: 'pipem'
   LOG_LEVEL: '{{ .Values.log.level }}'
-  NAMESPACE: { { .Release.Namespace } }
+  NAMESPACE: {{ .Release.Namespace }}
