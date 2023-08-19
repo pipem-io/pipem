@@ -31,4 +31,4 @@ mongodb:
 
 configInit:
   image: docker.pipem.io/config-init
-  tag: 0.5.1
+  tag: 0.6.0
